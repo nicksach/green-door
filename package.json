@@ -4,8 +4,8 @@
     "tailwindcss": "^4.2.4"
   },
   "scripts": {
-    "dev": "tailwindcss -i ./src/input.css -o ./public/output.css --watch",
-    "build": "tailwindcss -i ./src/input.css -o ./public/output.css --minify"
+    "dev": "node ./node_modules/@tailwindcss/cli/dist/index.mjs -i ./src/input.css -o ./public/output.css --watch",
+    "build": "node ./node_modules/@tailwindcss/cli/dist/index.mjs -i ./src/input.css -o ./public/output.css --minify"
   },
   "optionalDependencies": {
     "@tailwindcss/oxide-win32-x64-msvc": "^4.2.4"
